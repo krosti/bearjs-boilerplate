@@ -1,0 +1,27 @@
+/**
+ * Twitter Bootstrap styles
+ */
+@import "../../../vendor/bootstrap/less/bootstrap";
+@import "../../../vendor/bootstrap/less/responsive";
+
+/**
+ * Customizations for Bearjs.
+ */
+@import "customization/colors";
+@import "customization/layout";
+@import "customization/fonts";
+
+/**
+ * Components styles.
+ *
+ * @IMPORTANT
+ *     Each time a developer add a component to the system, the component's
+ *     style.less will be referenced from here. There is not allow to include
+ *     more than 1 file per component.
+ */
+@import "../../components/ReuseGallery/style";
+@import "../../components/MainLandingPage/style";
+	@import "../../components/ImageGallery/style";
+		@import "../../components/PersonasGallery/style";
+		@import "../../components/MiscGallery/style";
+@import "../../components/DesignthinkingGallery/style";

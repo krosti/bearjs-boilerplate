@@ -1,0 +1,24 @@
+{
+  "name": "MainLandingPage",
+  "version": "0.0.1",
+  "author": "Globant Team",
+
+  "description": "Bearjs UI client architecture",
+
+  "scripts": {
+    "preinstall": "npm install -g grunt-cli@~0.1"
+  },
+
+  "devDependencies": {
+    "grunt": "0.4.0rc4",
+    "grunt-contrib-less": "~0.3",
+    "grunt-contrib-clean": "~0.4",
+    "grunt-contrib-jshint": "~0.1",
+    "grunt-contrib-watch": "~0.2",
+    "grunt-contrib-copy": "~0.3"
+  },
+
+  "engine": {
+    "node": ">=0.8"
+  }
+}

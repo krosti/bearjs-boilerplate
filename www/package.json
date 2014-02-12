@@ -1,0 +1,25 @@
+{
+  "name": "DWA",
+  "version": "0.0.1",
+  "author": "Globant Team",
+  "description": "Bearjs Web Application",
+  "scripts": {
+    "preinstall": "npm install -g grunt-cli@~0.1 requirejs@2.1.2"
+  },
+  "dependencies": {
+    "connect": "*"
+  },
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-less": "~0.6.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-easy-less": "~0.8.2",
+    "grunt-contrib-connect": "~0.3.0"
+  },
+  "engine": {
+    "node": ">=0.10"
+  }
+}

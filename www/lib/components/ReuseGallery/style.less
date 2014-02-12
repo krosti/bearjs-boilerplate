@@ -1,0 +1,56 @@
+@assets: "/lib/assets/images";
+
+/*
+* @description BoxLink is a component that propose to reusing. So it's the way to represent inheritance
+*/
+@import "../BoxLink/style";
+
+/*
+* @name background_image
+* @description mixin for backgrounds
+* @example
+* .background_image("@{imgPath}/manager.png");
+*/
+  .background_image(@bg-image, @x: 50%, @y: 0.1rem, @w: 4.6rem, @h: 5.8rem) {
+    background-image: url(@bg-image);
+    background-repeat: no-repeat;
+    background-position: @x @y;
+    background-size: @w @h;
+  }
+/*
+
+* @name reuse-gallery
+* @description scope
+*/
+.reuse-gallery{
+  .go-back {
+    color: @font-purple;
+    > * {
+      font-family: @baseFontFamily;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .arrow-main {
+    background: url("@{assets}/menu-arrow.png") no-repeat;
+    background-size: 2.3rem 2.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  .nav.nav-pills li {
+    margin: 0 1.2rem 1rem;
+    a {
+      padding: 18px;
+      color:#fff;
+      .border-radius(20px);
+      .transition(color 1s);
+      &:link, &:visited{
+        color:#fff;
+      }
+      &:hover{
+        color:#222;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.rounded-box-link {
+  display: block;
+  position: relative;
+  -webkit-box-shadow: 3px 3px 9px @black;
+  -moz-box-shadow: 3px 3px 9px @black;
+  box-shadow: 3px 3px 9px @black;
+  text-align: center;
+  padding: 1rem;
+  width: 8rem;
+  height: 8rem;
+  .border-radius(20px);
+  h4 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0;
+    font-family: @baseFontFamily;
+    font-size: 21px;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,38 @@
+
+require.config({
+
+  deps: ["main"],
+
+  paths: {
+    // modules starting with application will be looked up here.
+    application   : ".",
+
+    // modules starting with component will be looked up here.
+    component     : "../lib/components",
+
+    backbone      : "../vendor/backbone/backbone",
+    layoutmanager : "../vendor/backbone.layoutmanager/backbone.layoutmanager",
+    jquery        : "../vendor/jquery/jquery",
+    underscore    : "../vendor/underscore/underscore",
+    handlebars    : "../vendor/handlebars/handlebars"
+  },
+
+  shim: {
+    handlebars : {
+      exports : "Handlebars"
+    },
+
+    jquery : {
+      exports : "jQuery"
+    },
+
+    backbone: {
+      deps: ["underscore", "jquery"],
+      exports: "Backbone"
+    },
+
+    layoutmanager: {
+      deps: ["backbone"]
+    }
+  }
+});
