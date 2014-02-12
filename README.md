@@ -21,8 +21,8 @@ How to start
 1. Go to your browser on this url: `http://localhost:9000`
 
 
-Organization of folders
------------------------
+Folder's organization
+---------------------
 
 `/docs #documentation`
 
@@ -32,7 +32,7 @@ Organization of folders
 
 
 
-Whats included?
+What's included?
 ---------------
 
 This project is built upon the hard work provided by the open source community. Design decisions change frequently as this is a rapidly evolving field, this means bundled libraries are subject to change.
@@ -217,15 +217,11 @@ Is your single point of entry to the application and since HTML5 pushState is en
 
 ### Where is the magic? Here:
 
-Add web components:
+- Add web components:
 
+    - Directory: `www/lib/components/:nameOfYourComponent`
 
-
-Directory: `www/lib/components/:nameOfYourComponent`
-
-
-
-grunt.js
+- `grunt.js`
 
 
 
@@ -237,13 +233,13 @@ The Gruntfile is the heart of the build system. Any time you run bbb commands yo
 
 1.  Watch the Demo
 
-2.  npm install
+2.  `npm install`
 
-3.  grunt less
+3.  `grunt less`
 
-4.  node server.js
+4.  `node server.js`
 
-5.  http://localhost:8080/lib/components/nameOfYourComponent/test/index.html
+5.  test it: `http://localhost:8080/lib/components/nameOfYourComponent/test/index.html`
 
 
 
@@ -279,8 +275,7 @@ require(['application/app', 'component/BoxLink/index'],
 
 ```
 
-
-
+--
 
 
 ToDo:
